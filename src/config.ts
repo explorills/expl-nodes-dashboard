@@ -8,7 +8,7 @@ export const facebookColor = '#3b5998';
 export const linkedInColor = '#0e76a8';
 
 export const APP_DEFAULT_PATH = '/';
-export const HORIZONTAL_MAX_ITEM = 7;
+export const HORIZONTAL_MAX_ITEM = 10;
 export const DRAWER_WIDTH = 260;
 export const MINI_DRAWER_WIDTH = 60;
 

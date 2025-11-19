@@ -36,4 +36,4 @@ jobs:
 
     - name: Deploy to S3 Staging
       run: |
-        aws s3 sync ./dist/ s3://staging-explorills-network/ --delete
+        aws s3 sync ./dist/ s3://staging-dashboard-expl-network/ --delete

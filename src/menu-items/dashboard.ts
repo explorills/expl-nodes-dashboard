@@ -5,6 +5,8 @@ import WalletOutlined from '@ant-design/icons/WalletOutlined';
 import GiftOutlined from '@ant-design/icons/GiftOutlined';
 import LikeOutlined from '@ant-design/icons/LikeOutlined';
 import MessageOutlined from '@ant-design/icons/MessageOutlined';
+import DollarOutlined from '@ant-design/icons/DollarOutlined';
+import SwapOutlined from '@ant-design/icons/SwapOutlined';
 
 // type
 import { NavItemType } from 'types/menu';
@@ -12,6 +14,8 @@ import { NavItemType } from 'types/menu';
 const icons = {
   dashboard: DashboardOutlined,
   nodes: ClusterOutlined,
+  liquidityMining: DollarOutlined,
+  explSwap: SwapOutlined,
   staking: WalletOutlined,
   rewards: GiftOutlined,
   voting: LikeOutlined,
@@ -35,6 +39,24 @@ const nodeManagement: NavItemType = {
   type: 'item',
   url: '/node-management',
   icon: icons.nodes,
+  breadcrumbs: false
+};
+
+const liquidityMining: NavItemType = {
+  id: 'liquidity-mining',
+  title: 'Liquidity Mining',
+  type: 'item',
+  url: '/liquidity-mining',
+  icon: icons.liquidityMining,
+  breadcrumbs: false
+};
+
+const explSwap: NavItemType = {
+  id: 'expl-swap',
+  title: 'EXPL Swap',
+  type: 'item',
+  url: '/expl-swap',
+  icon: icons.explSwap,
   breadcrumbs: false
 };
 
@@ -74,6 +96,6 @@ const communication: NavItemType = {
   breadcrumbs: false
 };
 
-export { dashboard, nodeManagement, staking, rewards, voting, communication };
+export { dashboard, nodeManagement, liquidityMining, explSwap, staking, rewards, voting, communication };
 
 
