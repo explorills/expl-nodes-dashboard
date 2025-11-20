@@ -7,6 +7,8 @@ import WalletOutlined from '@ant-design/icons/WalletOutlined';
 import GiftOutlined from '@ant-design/icons/GiftOutlined';
 import LikeOutlined from '@ant-design/icons/LikeOutlined';
 import MessageOutlined from '@ant-design/icons/MessageOutlined';
+import DollarOutlined from '@ant-design/icons/DollarOutlined';
+import SwapOutlined from '@ant-design/icons/SwapOutlined';
 import InfoCircleOutlined from '@ant-design/icons/InfoCircleOutlined';
 import BookOutlined from '@ant-design/icons/BookOutlined';
 import RocketOutlined from '@ant-design/icons/RocketOutlined';
@@ -37,6 +39,8 @@ export const searchData: SearchDataType = [
     childs: [
       { id: 'nav-dashboard', title: 'Dashboard', icon: <DashboardOutlined />, path: '/' },
       { id: 'nav-nodes', title: 'Node Management', icon: <ClusterOutlined />, path: '/node-management' },
+      { id: 'nav-liquidity', title: 'Liquidity Mining', icon: <DollarOutlined />, path: '/liquidity-mining' },
+      { id: 'nav-swap', title: 'EXPL Swap', icon: <SwapOutlined />, path: '/expl-swap' },
       { id: 'nav-staking', title: 'Staking', icon: <WalletOutlined />, path: '/staking' },
       { id: 'nav-rewards', title: 'Rewards', icon: <GiftOutlined />, path: '/rewards' },
       { id: 'nav-voting', title: 'Voting', icon: <LikeOutlined />, path: '/voting' },
