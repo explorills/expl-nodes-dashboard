@@ -35,7 +35,7 @@ export const searchData: SearchDataType = [
     id: 'navigation',
     title: 'Navigation',
     childs: [
-      { id: 'nav-dashboard', title: 'Dashboard', icon: <DashboardOutlined />, path: '/dashboard' },
+      { id: 'nav-dashboard', title: 'Dashboard', icon: <DashboardOutlined />, path: '/' },
       { id: 'nav-nodes', title: 'Node Management', icon: <ClusterOutlined />, path: '/node-management' },
       { id: 'nav-staking', title: 'Staking', icon: <WalletOutlined />, path: '/staking' },
       { id: 'nav-rewards', title: 'Rewards', icon: <GiftOutlined />, path: '/rewards' },

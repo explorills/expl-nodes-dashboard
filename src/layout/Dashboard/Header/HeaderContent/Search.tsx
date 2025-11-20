@@ -76,7 +76,7 @@ export default function Search() {
   }, [value]);
 
   const handleClick = (path: string) => {
-    if (path === '/dashboard') {
+    if (path === '/') {
       navigate(path);
       onCloseDialoge();
     } else {
