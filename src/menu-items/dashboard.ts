@@ -52,10 +52,10 @@ const liquidityMining: NavItemType = {
 };
 
 const explSwap: NavItemType = {
-  id: 'expl-swap',
-  title: 'EXPL Swap',
+  id: 'one-swap',
+  title: 'ONE Swap',
   type: 'item',
-  url: '/expl-swap',
+  url: '/one-swap',
   icon: icons.explSwap,
   breadcrumbs: false
 };

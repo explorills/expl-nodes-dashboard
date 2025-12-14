@@ -40,7 +40,7 @@ export const searchData: SearchDataType = [
       { id: 'nav-dashboard', title: 'Dashboard', icon: <DashboardOutlined />, path: '/' },
       { id: 'nav-nodes', title: 'Node Management', icon: <ClusterOutlined />, path: '/node-management' },
       { id: 'nav-liquidity', title: 'Liquidity Mining', icon: <DollarOutlined />, path: '/liquidity-mining' },
-      { id: 'nav-swap', title: 'EXPL Swap', icon: <SwapOutlined />, path: '/expl-swap' },
+      { id: 'nav-swap', title: 'ONE Swap', icon: <SwapOutlined />, path: '/one-swap' },
       { id: 'nav-staking', title: 'Staking', icon: <WalletOutlined />, path: '/staking' },
       { id: 'nav-rewards', title: 'Rewards', icon: <GiftOutlined />, path: '/rewards' },
       { id: 'nav-voting', title: 'Voting', icon: <LikeOutlined />, path: '/voting' },

@@ -33,9 +33,9 @@ export default function WelcomeBanner() {
           <Stack
             sx={(theme) => ({ gap: 2, padding: 3.4, color: 'background.paper', ...theme.applyStyles('dark', { color: 'text.primary' }) })}
           >
-            <Typography variant="h2">EXPL Nodes Dashboard</Typography>
+            <Typography variant="h2">ONE Network Dashboard</Typography>
             <Typography variant="h6">
-              Powering the decentralized future through community-driven blockchain infrastructure. Manage your nodes, track performance, and earn rewards.
+              Powering the decentralized future through community-driven blockchain infrastructure. Manage your nodes, track performance, and earn rewards. Part of the ONE Ecosystem // Powered by EXPL Nodes.
             </Typography>
             <Box>
               <Button

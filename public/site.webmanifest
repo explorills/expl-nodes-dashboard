@@ -1,0 +1,21 @@
+{
+  "name": "ONE Network - ONE Ecosystem",
+  "short_name": "ONE Network",
+  "description": "Decentralized node management platform. Manage blockchain nodes, track performance, and earn rewards. Part of the ONE ecosystem.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1c1c1d",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "lang": "en-US",
+  "categories": ["technology", "blockchain", "web3"],
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

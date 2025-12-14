@@ -118,3 +118,5 @@ dist
 
 # Additional ignores
 base
+
+components-materials/

@@ -80,7 +80,7 @@ export default function NotificationItem({ notification }: { notification: Notif
           >
             {user?.name}
             <Typography variant="body1">{message}</Typography>
-            {type === 'mention' && 'EXPL.network.'}
+            {type === 'mention' && 'ONE Network.'}
           </Typography>
         }
         secondary={

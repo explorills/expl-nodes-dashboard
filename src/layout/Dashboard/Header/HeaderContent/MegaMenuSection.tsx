@@ -49,7 +49,7 @@ export default function MegaMenuSection() {
 
   return (
     <Box sx={{ flexShrink: 0, ml: 0.75 }}>
-      <Tooltip title="Explorills Resources" disableInteractive>
+      <Tooltip title="ONE Ecosystem Resources" disableInteractive>
         <IconButton
           color="secondary"
           variant="light"
@@ -111,10 +111,10 @@ export default function MegaMenuSection() {
                       <Box sx={{ p: 4.5, pb: 3 }}>
                         <Stack sx={(theme) => ({ color: 'background.paper', ...theme.applyStyles('dark', { color: 'text.primary' }) })}>
                           <Typography variant="h2" sx={{ fontSize: '1.875rem', mb: 1 }}>
-                            Explorills Resources
+                            ONE Ecosystem
                           </Typography>
                           <Typography variant="h6">
-                            Official documentation, community resources, and support channels for the Explorills ecosystem.
+                            Official documentation, community resources, and support channels for the ONE ecosystem. Powered by EXPL Nodes.
                           </Typography>
                           <Stack direction="row" sx={{ alignItems: 'flex-end', justifyContent: 'space-between', mt: -1 }}>
                             <AnimateButton>
@@ -128,13 +128,14 @@ export default function MegaMenuSection() {
                                 }}
                                 endIcon={<ArrowRightOutlined />}
                                 component="a"
-                                href="https://docs.explorills.com"
+                                href="https://docs.expl.one"
                                 target="_blank"
+                                rel="noopener noreferrer"
                               >
                                 Documentation
                               </Button>
                             </AnimateButton>
-                            <CardMedia component="img" src="/Resources_Logo.png" alt="Explorills" sx={{ mr: -5, mb: -2.5, width: 124 }} />
+                            <CardMedia component="img" src="/Resources_Logo.png" alt="ONE Ecosystem" sx={{ mr: -5, mb: -2.5, width: 124 }} />
                           </Stack>
                         </Stack>
                       </Box>
@@ -164,29 +165,29 @@ export default function MegaMenuSection() {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://mint.explorills.com/#explorills-Nodes">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://node.expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="Nodes" />
+                                <ListItemText primary="EXPL Nodes" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://mint.explorills.com/#TNO-Bronze">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://pump.expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="TNO Cards" />
+                                <ListItemText primary="ONE Pump" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://explorills.network/">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://network.expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="Explorills Network" />
+                                <ListItemText primary="ONE Network" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://explorills.world/">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://world.expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="Explorills World" />
+                                <ListItemText primary="ONE World" />
                               </ListItemButton>
                             </List>
                           </Grid>
@@ -202,29 +203,23 @@ export default function MegaMenuSection() {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://discord.gg/jaZ23J3NCc">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/RetTCVq7tJ">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Discord" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://x.com/explorills_main">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://x.com/explorills_main">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Twitter" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://github.com/explorills">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://github.com/explorills">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="GitHub" />
-                              </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://www.linkedin.com/company/explorills">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="LinkedIn" />
                               </ListItemButton>
                             </List>
                           </Grid>
@@ -240,25 +235,19 @@ export default function MegaMenuSection() {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://explorills.com/">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="Main Landing" />
+                                <ListItemText primary="ONE Ecosystem" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://docs.explorills.com/">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://docs.expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Documentation" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="https://blog.explorills.com/">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="Explorills Blog" />
-                              </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" href="mailto:support@explorills.com">
+                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="mailto:support@expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>

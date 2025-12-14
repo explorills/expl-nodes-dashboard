@@ -1,54 +1,137 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <title>EXPL Nodes - Dashboard</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
-    <link rel="shortcut icon" href="/logo.png" />
-
-    <!-- Meta Tags-->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#a147e1" />
-    <meta name="title" content="EXPL.network - Decentralized Node Management Platform" />
-    <meta
-      name="description"
-      content="EXPL.network - Community-powered decentralized node management platform. Manage your blockchain nodes, track rewards, participate in governance, and connect with the community."
-    />
-    <meta
-      name="keywords"
-      content="blockchain nodes, decentralized network, node management, staking platform, blockchain rewards, community governance, EXPL network, node dashboard"
-    />
-    <meta name="author" content="Explorills" />
+    <meta charset="UTF-8" />
+    
+    <!-- Google Analytics 4 - ONE Ecosystem -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NM3XM3TX2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3NM3XM3TX2');
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>ONE Network - Decentralized Node Management | ONE Ecosystem</title>
+    <meta name="title" content="ONE Network - Decentralized Node Management | ONE Ecosystem" />
+    <meta name="description" content="Community-powered decentralized node management platform. Manage blockchain nodes, track rewards, participate in governance. Part of the ONE ecosystem: open source, 40% revenue to EXPL Node owners." />
+    <meta name="keywords" content="blockchain nodes, decentralized network, node management, staking platform, blockchain rewards, community governance, EXPL Nodes, node dashboard, web3, crypto, decentralized, open source" />
+    <meta name="author" content="EXPL.ONE Team" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="color-scheme" content="dark" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://network.expl.one/" />
+    
+    <!-- Language -->
+    <meta property="og:locale" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://network.expl.one/" />
+    <link rel="alternate" hreflang="x-default" href="https://network.expl.one/" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://expl.network/" />
-    <meta property="og:title" content="EXPL.network - Decentralized Node Management" />
-    <meta property="og:description" content="Community-powered decentralized node management platform for blockchain networks." />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:url" content="https://network.expl.one/" />
+    <meta property="og:site_name" content="ONE Network" />
+    <meta property="og:title" content="ONE Network - Decentralized Node Management | ONE Ecosystem" />
+    <meta property="og:description" content="Community-powered decentralized node management platform. Manage blockchain nodes, track rewards, participate in governance." />
+    <meta property="og:image" content="https://network.expl.one/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ONE Network - ONE Ecosystem" />
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://expl.network/" />
-    <meta property="twitter:title" content="EXPL.network - Decentralized Node Management" />
-    <meta property="twitter:description" content="Community-powered decentralized node management platform for blockchain networks." />
-    <meta property="twitter:image" content="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-
-    <!-- Performance hints for Vite -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@explorills_main" />
+    <meta name="twitter:creator" content="@explorills_main" />
+    <meta name="twitter:url" content="https://network.expl.one/" />
+    <meta name="twitter:title" content="ONE Network - Decentralized Node Management" />
+    <meta name="twitter:description" content="Community-powered decentralized node management. Manage nodes, track rewards, participate in governance." />
+    <meta name="twitter:image" content="https://network.expl.one/og-image.png" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- Structured Data: Organization (Reference Main) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://expl.one/#organization",
+        "name": "EXPL.ONE",
+        "url": "https://expl.one",
+        "logo": "https://expl.one/logo.png",
+        "sameAs": [
+            "https://github.com/explorills",
+            "https://x.com/explorills_main",
+            "https://discord.com/invite/RetTCVq7tJ"
+        ]
+    }
+    </script>
+    
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://network.expl.one/#website",
+        "name": "ONE Network",
+        "url": "https://network.expl.one",
+        "description": "Decentralized node management platform for the ONE ecosystem. Manage blockchain nodes, track performance, and earn rewards.",
+        "publisher": {
+            "@id": "https://expl.one/#organization"
+        },
+        "isPartOf": {
+            "@id": "https://expl.one/#website"
+        },
+        "inLanguage": "en-US"
+    }
+    </script>
+    
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ONE Ecosystem",
+                "item": "https://expl.one/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ONE Network",
+                "item": "https://network.expl.one/"
+            }
+        ]
+    }
+    </script>
 
-    <!-- this is to resolve issue in old safari browser in tablet -->
+    <!-- ResizeObserver polyfill for old Safari -->
     <script src="https://cdn.jsdelivr.net/npm/resize-observer-polyfill@1.5.1/dist/ResizeObserver.min.js"></script>
   </head>
   <body>
+    <!-- Screen-reader H1 for SEO -->
+    <h1 class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">ONE Network - Decentralized Node Management | ONE Ecosystem</h1>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>

@@ -41,7 +41,7 @@ export default function HeaderContent() {
               fontSize: '1rem'
             }}
           >
-            EXPL.network
+            ONE Network
           </Typography>
         </Stack>
       )}

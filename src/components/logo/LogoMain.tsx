@@ -12,7 +12,7 @@ export default function LogoMain({ reverse }: { reverse?: boolean }) {
   const { colorScheme } = useColorScheme();
 
   return (
-    <img src={explLogo} alt="EXPL.network" height="35" />
+    <img src={explLogo} alt="ONE Network - ONE Ecosystem" height="35" />
   );
 }
 

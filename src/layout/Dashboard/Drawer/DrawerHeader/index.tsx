@@ -43,7 +43,7 @@ export default function DrawerHeader({ open }: Props) {
               color: 'white'
             }}
           >
-            EXPL.network
+            ONE Network
           </Typography>
         )}
       </Stack>
