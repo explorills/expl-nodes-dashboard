@@ -26,6 +26,8 @@ export default function HeaderContent() {
 
   const downLG = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'));
   const below580 = useMediaQuery('(max-width:580px)');
+  const below590 = useMediaQuery('(max-width:590px)');
+  const below625 = useMediaQuery('(max-width:625px)');
 
   const megaMenu = useMemo(() => <MegaMenuSection />, []);
 
@@ -34,7 +36,7 @@ export default function HeaderContent() {
       {state.menuOrientation === MenuOrientation.HORIZONTAL && !downLG && <DrawerHeader open={true} />}
       {downLG && (
         <Stack direction="row" spacing={1.5} alignItems="center" sx={{ ml: 1 }}>
-          <Logo sx={{ width: 42, height: 42 }} />
+          <Logo sx={{ width: 46, height: 46 }} />
           <Stack direction={below580 ? "column" : "row"} spacing={below580 ? 0.25 : 1} alignItems={below580 ? "flex-start" : "center"}>
             <Typography 
               sx={{ 
@@ -51,17 +53,20 @@ export default function HeaderContent() {
           </Stack>
         </Stack>
       )}
-      {!downLG && (
-        <>
-          <Search />
-        </>
-      )}
-      <Box sx={{ width: 1, ml: 1 }} />
+      {/* Search bar - visible on all screens except when moved to right side below 580px */}
+      {!below580 && <Search />}
+      {/* Spacer - only when search is on left */}
+      {!below580 && <Box sx={{ width: 1, ml: 1 }} />}
 
       <Stack direction="row" sx={{ alignItems: 'center', gap: 0.75 }}>
-        {downLG && <Search />}
+        {/* Search bar moves to right side below 580px */}
+        {below580 && <Search />}
+        {/* Resources (MegaMenu) - hidden below 590px */}
         {!downLG && megaMenu}
+        {downLG && !below590 && megaMenu}
+        {/* FullScreen - hidden below 625px */}
         {!downLG && <FullScreen />}
+        {downLG && !below625 && <FullScreen />}
       </Stack>
     </>
   );

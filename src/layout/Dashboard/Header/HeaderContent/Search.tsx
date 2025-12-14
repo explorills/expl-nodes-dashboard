@@ -97,7 +97,7 @@ export default function Search() {
 
   return (
     <>
-      <Box>
+      <Box sx={{ ml: '14px' }}>
         <Stack
           direction="row"
           tabIndex={0}
