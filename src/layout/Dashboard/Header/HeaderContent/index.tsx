@@ -13,6 +13,7 @@ import Search from './Search';
 import FullScreen from './FullScreen';
 import MegaMenuSection from './MegaMenuSection';
 import Logo from 'components/logo';
+import PoweredByExplNodes from 'components/PoweredByExplNodes';
 
 import useConfig from 'hooks/useConfig';
 import { MenuOrientation } from 'config';
@@ -33,16 +34,21 @@ export default function HeaderContent() {
       {downLG && (
         <Stack direction="row" spacing={1} alignItems="center" sx={{ ml: 1 }}>
           <Logo sx={{ width: 35, height: 35 }} />
-          <Typography 
-            variant="h6" 
-            sx={{ 
-              fontWeight: 600, 
-              color: 'white',
-              fontSize: '1rem'
-            }}
-          >
-            ONE Network
-          </Typography>
+          <Stack spacing={0.25}>
+            <Typography 
+              variant="h6" 
+              sx={{ 
+                fontWeight: 600, 
+                color: 'white',
+                fontSize: '1rem',
+                whiteSpace: 'nowrap',
+                lineHeight: 1.2,
+              }}
+            >
+              ONE network
+            </Typography>
+            <PoweredByExplNodes size="sm" />
+          </Stack>
         </Stack>
       )}
       {!downLG && (

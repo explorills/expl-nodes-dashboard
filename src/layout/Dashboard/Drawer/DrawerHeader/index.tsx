@@ -2,10 +2,12 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 
 // project imports
 import DrawerHeaderStyled from './DrawerHeaderStyled';
 import Logo from 'components/logo';
+import PoweredByExplNodes from 'components/PoweredByExplNodes';
 
 import useConfig from 'hooks/useConfig';
 import { MenuOrientation } from 'config';
@@ -36,15 +38,22 @@ export default function DrawerHeader({ open }: Props) {
       <Stack direction="row" spacing={1} alignItems="center">
         <Logo isIcon={!open} sx={{ width: open ? 'auto' : 35, height: 35 }} />
         {open && (
-          <Typography 
-            variant="h4" 
-            sx={{ 
-              fontWeight: 600, 
-              color: 'white'
-            }}
-          >
-            ONE Network
-          </Typography>
+          <Stack spacing={0.25}>
+            <Typography 
+              variant="h4" 
+              sx={{ 
+                fontWeight: 600, 
+                color: 'white',
+                whiteSpace: 'nowrap',
+                lineHeight: 1.2,
+              }}
+            >
+              ONE network
+            </Typography>
+            <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+              <PoweredByExplNodes size="sm" />
+            </Box>
+          </Stack>
         )}
       </Stack>
     </DrawerHeaderStyled>

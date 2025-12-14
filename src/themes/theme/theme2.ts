@@ -35,14 +35,15 @@ export default function Theme2(colors: PalettesProps, mode: ThemeMode): PaletteT
   };
   const contrastText = '#fff';
 
-  let primaryColors = ['#EEEDFC', '#D5D1F8', '#B9B2F3', '#9C93EE', '#877CEA', '#a147e1', '#6A5DE3', '#a147e1', '#5549DB', '#4237D5'];
+  // ONE Network theme colors - primary: #2563eb (blue)
+  let primaryColors = ['#dbeafe', '#bfdbfe', '#93c5fd', '#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8', '#1e40af', '#1e3a8a', '#172554'];
   let errorColors = ['#FDE8E7', '#F25E52', '#F04134', '#EE3B2F', '#E92A21'];
   let warningColors = ['#FFF7E0', '#FFC926', '#FFBF00', '#FFB900', '#FFA900'];
   let infoColors = ['#E0F4F5', '#26B0BA', '#00A2AE', '#009AA7', '#008694'];
   let successColors = ['#E0F5EA', '#26B56E', '#00A854', '#00A04D', '#008D3A'];
 
   if (mode === ThemeMode.DARK) {
-    primaryColors = ['#222130', '#2b2946', '#37335a', '#443e78', '#554ca0', '#a147e1', '#9186dd', '#a147e1', '#c3baf4', '#efecfb'];
+    primaryColors = ['#172554', '#1e3a8a', '#1e40af', '#1d4ed8', '#2563eb', '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe'];
     errorColors = ['#321d1d', '#7d2e28', '#d13c31', '#e66859', '#f8baaf'];
     warningColors = ['#342c1a', '#836611', '#dda705', '#e9bf28', '#f8e577'];
     infoColors = ['#1a2628', '#11595f', '#058e98', '#1ea6aa', '#64cfcb'];

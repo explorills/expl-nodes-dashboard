@@ -49,7 +49,7 @@ export default function MegaMenuSection() {
 
   return (
     <Box sx={{ flexShrink: 0, ml: 0.75 }}>
-      <Tooltip title="ONE Ecosystem Resources" disableInteractive>
+      <Tooltip title="ONE ecosystem Resources" disableInteractive>
         <IconButton
           color="secondary"
           variant="light"
@@ -111,7 +111,7 @@ export default function MegaMenuSection() {
                       <Box sx={{ p: 4.5, pb: 3 }}>
                         <Stack sx={(theme) => ({ color: 'background.paper', ...theme.applyStyles('dark', { color: 'text.primary' }) })}>
                           <Typography variant="h2" sx={{ fontSize: '1.875rem', mb: 1 }}>
-                            ONE Ecosystem
+                            ONE ecosystem
                           </Typography>
                           <Typography variant="h6">
                             Official documentation, community resources, and support channels for the ONE ecosystem. Powered by EXPL Nodes.
@@ -175,19 +175,13 @@ export default function MegaMenuSection() {
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="ONE Pump" />
-                              </ListItemButton>
-                              <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://network.expl.one">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="ONE Network" />
+                                <ListItemText primary="ONE pump" />
                               </ListItemButton>
                               <ListItemButton disableRipple component="a" target="_blank" rel="noopener noreferrer" href="https://world.expl.one">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="ONE World" />
+                                <ListItemText primary="ONE world" />
                               </ListItemButton>
                             </List>
                           </Grid>
