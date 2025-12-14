@@ -35,8 +35,8 @@ export default function HeaderContent() {
     <>
       {state.menuOrientation === MenuOrientation.HORIZONTAL && !downLG && <DrawerHeader open={true} />}
       {downLG && (
-        <Stack direction="row" spacing={1.5} alignItems="center" sx={{ ml: 1 }}>
-          <Logo sx={{ width: 46, height: 46 }} />
+        <Stack direction="row" spacing={1} alignItems="center" sx={{ ml: 1 }}>
+          <Logo sx={{ width: 54, height: 54 }} />
           <Stack direction={below580 ? "column" : "row"} spacing={below580 ? 0.25 : 1} alignItems={below580 ? "flex-start" : "center"}>
             <Typography 
               sx={{ 
