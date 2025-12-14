@@ -23,16 +23,16 @@ interface PoweredByExplNodesProps {
   newTab?: boolean;
 }
 
-// Font size matches Typography caption (0.75rem = 12px)
+// Font size adjusted to fit with search bar and title
 const SIZES = {
   sm: {
-    fontSize: '0.75rem', // 12px - matches caption/footer text
+    fontSize: '0.7rem', // 11.2px - slightly smaller to fit better
     paddingX: '10px',
     paddingY: '4px',
     borderRadius: '4px',
   },
   md: {
-    fontSize: '0.75rem', // 12px - matches caption/footer text
+    fontSize: '0.7rem', // 11.2px - slightly smaller to fit better
     paddingX: '12px',
     paddingY: '6px',
     borderRadius: '6px',

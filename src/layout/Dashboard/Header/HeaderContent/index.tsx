@@ -25,6 +25,7 @@ export default function HeaderContent() {
   const { state } = useConfig();
 
   const downLG = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'));
+  const below580 = useMediaQuery('(max-width:580px)');
 
   const megaMenu = useMemo(() => <MegaMenuSection />, []);
 
@@ -34,11 +35,11 @@ export default function HeaderContent() {
       {downLG && (
         <Stack direction="row" spacing={1.5} alignItems="center" sx={{ ml: 1 }}>
           <Logo sx={{ width: 42, height: 42 }} />
-          <Stack direction="column" spacing={0.25} alignItems="flex-start">
+          <Stack direction={below580 ? "column" : "row"} spacing={below580 ? 0.25 : 1} alignItems={below580 ? "flex-start" : "center"}>
             <Typography 
               sx={{ 
                 fontWeight: 600, 
-                fontSize: '1rem', // 16px - 4px larger than tagline (12px)
+                fontSize: '1rem',
                 whiteSpace: 'nowrap',
                 lineHeight: 1.2,
               }}

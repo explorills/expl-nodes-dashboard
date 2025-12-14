@@ -16,8 +16,8 @@ import GithubOutlined from '@ant-design/icons/GithubOutlined';
 import TwitterOutlined from '@ant-design/icons/TwitterOutlined';
 
 export default function Footer() {
-  // Custom 540px breakpoint as per design requirements
-  const isMobile = useMediaQuery('(max-width:540px)');
+  // Custom 580px breakpoint to match header transformation
+  const isMobile = useMediaQuery('(max-width:580px)');
 
   return (
     <Box

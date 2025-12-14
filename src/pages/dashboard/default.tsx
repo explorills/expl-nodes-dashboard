@@ -316,11 +316,11 @@ export default function DashboardDefault() {
       <Typography
         variant="h1"
         sx={{
-          fontFamily: 'Roboto',
+          fontFamily: "'Space Grotesk', sans-serif",
           fontWeight: 700,
           fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
           color: 'primary.main',
-          textShadow: '0 4px 20px rgba(161, 71, 225, 0.3)'
+          textShadow: '0 4px 20px rgba(37, 99, 235, 0.3)'
         }}
       >
         Launching Soon
