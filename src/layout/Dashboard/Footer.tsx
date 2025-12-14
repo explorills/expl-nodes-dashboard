@@ -16,7 +16,8 @@ import GithubOutlined from '@ant-design/icons/GithubOutlined';
 import TwitterOutlined from '@ant-design/icons/TwitterOutlined';
 
 export default function Footer() {
-  const downSM = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
+  // Custom 540px breakpoint as per design requirements
+  const isMobile = useMediaQuery('(max-width:540px)');
 
   return (
     <Box
@@ -58,10 +59,10 @@ export default function Footer() {
         spacing={0.5} 
         sx={{ 
           alignItems: 'center',
-          display: { xs: 'none', sm: 'flex' },
-          position: { sm: 'absolute' },
-          left: { sm: '50%' },
-          transform: { sm: 'translateX(-50%)' },
+          display: isMobile ? 'none' : 'flex',
+          position: 'absolute',
+          left: '50%',
+          transform: 'translateX(-50%)',
         }}
       >
         <IconButton
@@ -103,7 +104,7 @@ export default function Footer() {
       </Stack>
 
       {/* Right: Social on mobile, PoweredBy on desktop */}
-      {downSM ? (
+      {isMobile ? (
         <Stack direction="row" spacing={0.5} sx={{ alignItems: 'center' }}>
           <IconButton
             component="a"
