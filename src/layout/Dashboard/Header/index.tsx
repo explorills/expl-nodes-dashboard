@@ -62,7 +62,7 @@ export default function Header() {
     color: 'inherit',
     elevation: 0,
     sx: (theme) => ({
-      backgroundColor: theme.palette.mode === 'dark' ? 'rgba(161, 71, 225, 0.1)' : 'rgba(161, 71, 225, 0.1)',
+      backgroundColor: '#1c1c1d',
       backdropFilter: 'blur(10px)',
       WebkitBackdropFilter: 'blur(10px)',
       boxShadow: '0 0 0.2rem rgba(0, 0, 0, 0), 0 0.2rem 0.4rem rgba(0, 0, 0, 0)',

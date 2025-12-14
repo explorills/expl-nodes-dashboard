@@ -65,7 +65,7 @@ export const DEFAULT_THEME_MODE: ThemeMode = ThemeMode.DARK;
 // ==============================|| THEME CONFIG ||============================== //
 
 const config: ConfigStates = {
-  fontFamily: `'Roboto', sans-serif`,
+  fontFamily: `'Space Grotesk', sans-serif`,
   i18n: 'en',
   menuOrientation: MenuOrientation.HORIZONTAL,
   container: true,

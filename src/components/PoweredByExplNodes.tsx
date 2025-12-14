@@ -15,7 +15,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
 interface PoweredByExplNodesProps {
-  /** Size variant: 'sm' (10px), 'md' (12px), 'lg' (14px) */
+  /** Size variant: 'sm' (12px - matches caption), 'md' (12px), 'lg' (14px) */
   size?: 'sm' | 'md' | 'lg';
   /** Link URL (default: https://node.expl.one) */
   href?: string;
@@ -23,15 +23,16 @@ interface PoweredByExplNodesProps {
   newTab?: boolean;
 }
 
+// Font size matches Typography caption (0.75rem = 12px)
 const SIZES = {
   sm: {
-    fontSize: '10px',
-    paddingX: '8px',
+    fontSize: '0.75rem', // 12px - matches caption/footer text
+    paddingX: '10px',
     paddingY: '4px',
     borderRadius: '4px',
   },
   md: {
-    fontSize: '12px',
+    fontSize: '0.75rem', // 12px - matches caption/footer text
     paddingX: '12px',
     paddingY: '6px',
     borderRadius: '6px',

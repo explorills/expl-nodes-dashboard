@@ -32,20 +32,19 @@ export default function HeaderContent() {
     <>
       {state.menuOrientation === MenuOrientation.HORIZONTAL && !downLG && <DrawerHeader open={true} />}
       {downLG && (
-        <Stack direction="row" spacing={1} alignItems="center" sx={{ ml: 1 }}>
+        <Stack direction="row" spacing={1.5} alignItems="center" sx={{ ml: 1 }}>
           <Logo sx={{ width: 35, height: 35 }} />
-          <Stack spacing={0.25}>
+          <Stack direction="row" spacing={1} alignItems="center">
             <Typography 
-              variant="h6" 
               sx={{ 
                 fontWeight: 600, 
-                color: 'white',
-                fontSize: '1rem',
+                fontSize: '1.125rem', // increased by 6px from 1rem
                 whiteSpace: 'nowrap',
                 lineHeight: 1.2,
               }}
             >
-              ONE network
+              <Box component="span" sx={{ color: 'white' }}>ONE </Box>
+              <Box component="span" sx={{ color: 'primary.main' }}>network</Box>
             </Typography>
             <PoweredByExplNodes size="sm" />
           </Stack>

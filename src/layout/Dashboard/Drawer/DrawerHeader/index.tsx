@@ -3,6 +3,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
+import { useTheme } from '@mui/material/styles';
 
 // project imports
 import DrawerHeaderStyled from './DrawerHeaderStyled';
@@ -19,6 +20,7 @@ interface Props {
 // ==============================|| DRAWER HEADER ||============================== //
 
 export default function DrawerHeader({ open }: Props) {
+  const theme = useTheme();
   const downLG = useMediaQuery((theme) => theme.breakpoints.down('lg'));
 
   const { state } = useConfig();
@@ -35,23 +37,24 @@ export default function DrawerHeader({ open }: Props) {
         paddingLeft: isHorizontal ? { xs: '24px', lg: '0' } : open ? '24px' : 0
       }}
     >
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack direction="row" spacing={1.5} alignItems="center">
         <Logo isIcon={!open} sx={{ width: open ? 'auto' : 35, height: 35 }} />
         {open && (
-          <Stack spacing={0.25}>
+          <Stack direction="row" spacing={1.5} alignItems="center">
             <Typography 
               variant="h4" 
               sx={{ 
                 fontWeight: 600, 
-                color: 'white',
                 whiteSpace: 'nowrap',
                 lineHeight: 1.2,
+                fontSize: '1.5rem', // increased by 6px from 1.25rem
               }}
             >
-              ONE network
+              <Box component="span" sx={{ color: 'white' }}>ONE </Box>
+              <Box component="span" sx={{ color: 'primary.main' }}>network</Box>
             </Typography>
             <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
-              <PoweredByExplNodes size="sm" />
+              <PoweredByExplNodes size="md" />
             </Box>
           </Stack>
         )}

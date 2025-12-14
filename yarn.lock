@@ -796,6 +796,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/space-grotesk@npm:^5.2.10":
+  version: 5.2.10
+  resolution: "@fontsource/space-grotesk@npm:5.2.10"
+  checksum: 10c0/dabe027e9ef8e4dc5d6982e3ff5a73a311a151c06f2dc0b881468c9bab4f0b39106f182aa29be8e1a4ea10ce435dea807bdcb982176ee5e81083fd3814f5a5bd
+  languageName: node
+  linkType: hard
+
 "@formatjs/ecma402-abstract@npm:2.3.6":
   version: 2.3.6
   resolution: "@formatjs/ecma402-abstract@npm:2.3.6"
@@ -4120,6 +4127,7 @@ __metadata:
     "@fontsource/poppins": "npm:5.2.7"
     "@fontsource/public-sans": "npm:5.2.7"
     "@fontsource/roboto": "npm:5.2.8"
+    "@fontsource/space-grotesk": "npm:^5.2.10"
     "@mui/base": "npm:5.0.0-beta.70"
     "@mui/lab": "npm:7.0.1-beta.18"
     "@mui/material": "npm:7.3.4"
